@@ -1,13 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     margin-top: 25px;
-    text-align: center;    
+    text-align: center;
 }
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.result {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 10%;
+}
+.screen {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 15%;
+}
+.keys {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+    padding: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.content:hover {
+    opacity: 0.7;
+}
+
+.content {
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgColor{
+    background-color:rgb(165, 165, 165);
+    color: black;
+    
+}
+
+.bgColorNumCal{
+    background-color: rgb(242, 158, 75);
+    color: white;
+}
+
+.bgColorNum{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+
+.c17 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50px;
+}
+
+
+
+
 
 .footer {
     background-color: rgba(228, 233, 228, 0.933);
